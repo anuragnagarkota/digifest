@@ -52,7 +52,9 @@ class ViewProduct extends React.Component {
                 <img src={this.props.data.img} />
               </Avatar>
             }
-             
+             action={
+             <Typography type="body2" gutterBottom align="left" style={{marginRight:10}}><b>Ravi Krishi Farm</b></Typography>
+            }
             title={this.props.data.title}
             subheader={this.props.data.subheader}
           />
@@ -67,7 +69,7 @@ class ViewProduct extends React.Component {
             <div className={classes.flexGrow} />
              
                <Button raised color="primary"  >
-        View  
+        Contact Farmer  
       </Button>
            
           </CardActions>
