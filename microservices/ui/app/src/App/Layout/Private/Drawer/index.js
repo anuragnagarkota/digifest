@@ -67,7 +67,10 @@ return(
             
           </Typography>
 		 
-        <i className="material-icons">touch_app</i> 
+        {/*<i className="material-icons">touch_app</i> */}
+		  <Typography style={{color:"#fff",fontFamily:'cursive'}} type="headline" >
+            EKisaan
+          </Typography>
 	  
 	  <i onClick={this.handleClick} className="material-icons" style={{position:"absolute",right:20,cursor:"pointer"}}>more_vert</i>
       

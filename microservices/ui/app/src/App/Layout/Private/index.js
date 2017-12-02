@@ -3,7 +3,7 @@ import {Route, Switch,Redirect} from 'react-router'
 import Grid from 'material-ui/Grid';
 import Drawer from './Drawer'
 import Home from './Home'
-import Consumer from './Consumer'
+import SearchProduct from './SearchProduct'
 import ChangeLanguage from './ChangeLanguage'
 import AddProduct from './AddProduct'
 import ViewProduct from './ViewProduct'
@@ -15,7 +15,7 @@ export const Private = () => {
 		     <Grid item xs={12} sm={12}  >
             <Switch>
                 <Route path="/app" exact component={Home}/>
-				<Route path="/app/consumer" exact component={Consumer}/>
+				<Route path="/app/consumer" exact component={SearchProduct}/>
 				<Route path="/app/add-product" exact component={AddProduct}/>
 				<Route path="/app/view-products" exact component={ViewProduct}/>
 				<Route path="/app/change-language" exact component={ChangeLanguage} />
