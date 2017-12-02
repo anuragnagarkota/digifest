@@ -1,0 +1,47 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\anurag\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-scripts@1.0.17
+
+PATH: 
+  C:\Program Files (x86)\ImageMagick-7.0.5-Q16;C:\wamp\bin\php\php5.4.12\ImageMagick-7.0.5-Q16;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\ProgramData\Oracle\Java\javapath;C:\Ruby21-x64\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_74\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Users\anurag\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\GitStack\python;C:\GitStack\python\Scripts;C:\GitStack\git\cmd;C:\GitStack\git\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\wamp\bin\php\php5.4.12\php.exe;C:\composer;;C:\ant\bin;node_modules\npm;C:\Users\anurag\AppData\Local\.meteor\;C:\Windows\System32;C:\Users\anurag\AppData\Local\atom\bin;C:\Program Files (x86)\PHP\v5.3;C:\Users\anurag\AppData\Roaming\npm;C:\Users\anurag\AppData\Local\.meteor;C:\Users\anurag\AppData\Local\Android\sdk\platform-tools;C:\Users\anurag\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Heroku\bin;C:\Users\anurag\AppData\Roaming\Composer\vendor\bin;C:\wamp\bin\php\php5.4.12\php.exe;C:\Program Files\Microsoft VS Code\bin;C:\Users\anurag\AppData\Local\Hasura\
+
+Yarn version: 
+  0.19.1
+
+Node version: 
+  6.3.1
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "digifest-ui",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "material-ui": "next",
+      "react": "^16.0.0",
+  	"react-apollo": "^1.2.0",
+      "react-dom": "^16.0.0",
+      "react-router-dom": "^4.2.2",
+      "react-scripts": "^1.0.17"
+    },
+    "scripts": {
+      "start": "set REACT_APP_CLUSTER_NAME=ambuscade99 && react-scripts start",
+      "build": "set REACT_APP_CLUSTER_NAME=ambuscade99 && react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: connect ETIMEDOUT 151.101.36.162:80
+      at Object.exports._errnoException (util.js:1012:11)
+      at exports._exceptionWithHostPort (util.js:1035:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1080:14)
