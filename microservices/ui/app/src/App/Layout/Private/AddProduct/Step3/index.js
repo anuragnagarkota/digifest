@@ -2,6 +2,8 @@ import React from 'react'
 import Select from 'material-ui/Select';
 import { MenuItem } from 'material-ui/Menu';
 import TextField from 'material-ui/TextField';
+import { FormControlLabel, FormGroup } from 'material-ui/Form';
+import Checkbox from 'material-ui/Checkbox';
 export default class Step3 extends React.Component {
  state = {
     range:0,
@@ -13,7 +15,7 @@ export default class Step3 extends React.Component {
   };
  
  handlePrice= (event)=>{
-    this.setState({ range: event.target.value });
+    this.setState({ price: event.target.value });
 	this.props.setPrice(event.target.value);
   };
  
@@ -22,15 +24,27 @@ let r_array=[{value:'upto 10 km',text:'upto 10 km'},{value:'upto 50 km',text:'up
  return (
         <div>
 		  
+		  
+		   <FormControlLabel
+          control={
+            <Checkbox
+              
+              value="checkedA"
+            />
+          }
+          label="Organic"
+        />
+      
+		  
 		<TextField
           id="price"
           label="Price"
-           
+           style={{width:300}}
            onChange={this.handlePrice}	
           margin="normal"
         />
 		 
-		 
+		 <br /><br /><br />
 		 <Select
           autoWidth   
            style={{width:300}}

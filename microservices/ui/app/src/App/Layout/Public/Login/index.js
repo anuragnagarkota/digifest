@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {Typography ,TextField,Button,withStyles,Grid,Paper} from 'material-ui';
 import PropTypes from 'prop-types';
+import Logo from '../../../assets/logo.jpg'
 const styles = theme => ({
   root: theme.mixins.gutters({
     paddingTop: 32,
@@ -16,7 +17,7 @@ const styles = theme => ({
 
 class Login extends React.Component{
 state={
-username:''
+username:'farmer'
 }
 login=(e)=>{
 e.preventDefault()
@@ -56,12 +57,16 @@ this.setState({username:e.target.value})
      <Paper className={classes.root} elevation={4}>
 	<center>
  
-	<i className="material-icons" style={{fontSize:"30px",color:"#666"}}>touch_app</i> 
+	{/*<i className="material-icons" style={{fontSize:"30px",color:"#666"}}>touch_app</i> */}
+	<img src={Logo} width={100} /><br />
+	   <Typography type="subheading" gutterBottom style={{fontFamily:'cursive'}}>
+        Reconnecting Farmers & Consumers
+      </Typography> 
  
 	<br />
 	  <form onSubmit={this.login}>
    <i className="material-icons">account_circle</i>&nbsp;&nbsp;<TextField onChange={this.setUsername} style={{width:200}}
-     label="Username"  
+     label="Username"   value={this.state.username}
     /><br />
     <br />
    <i className="material-icons">lock</i>&nbsp;&nbsp;<TextField style={{width:200}}  type="password"

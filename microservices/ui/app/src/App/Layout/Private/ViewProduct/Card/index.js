@@ -10,7 +10,7 @@ import Button from 'material-ui/Button';
 
 const styles = theme => ({
   card: {
-    maxWidth: 300,
+    maxWidth: '95%',
   },
   media: {
     height: 60,

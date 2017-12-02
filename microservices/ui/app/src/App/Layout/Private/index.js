@@ -11,8 +11,8 @@ export const Private = () => {
     return (
         <div>
            <Drawer />
-		   <Grid container spacing={12} justify="center" style={{marginTop:80}}>
-		     <Grid item xs={11} sm={9}  >
+		   <Grid container spacing={12} justify="center" style={{marginTop:80,marginLeft:10,marginRight:10}}>
+		     <Grid item xs={12} sm={12}  >
             <Switch>
                 <Route path="/app" exact component={Home}/>
 				<Route path="/app/consumer" exact component={Consumer}/>

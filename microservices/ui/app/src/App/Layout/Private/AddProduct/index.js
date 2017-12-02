@@ -79,14 +79,17 @@ class AddProduct extends React.Component {
   
   setProduct=(v)=>{
   this.setState({ProductID:v})
+  this.handleNext()
   }
   
   setPrice=(v)=>{
   this.setState({Price:v})
+ 
   }
   
   setRange=(v)=>{
   this.setState({Range:v})
+   this.handleNext()
   }
 
   submit=async()=>{
@@ -108,6 +111,7 @@ try {
 		 
 		 alert(result);
 		 this.handleReset()
+		 this.props.history.push("/app/view-products")
 		
 }
 catch(e)
